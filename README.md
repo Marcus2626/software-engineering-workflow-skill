@@ -1,10 +1,24 @@
-# software-engineering-workflow v3
+# Software Engineering Workflow Skill for Codex
 
-A token-optimized Codex orchestrator for repository-backed software development:
-risk routing, compact living ExecPlans, selective multi-agent delegation,
-worktree isolation, fresh evidence, and proportional review.
+`software-engineering-workflow-skill` is a reusable Codex Skill for
+repository-backed software development. It provides risk routing, compact
+living ExecPlans, selective multi-agent delegation, worktree isolation, fresh
+evidence, and proportional review.
 
-## What changed in v3
+> This is the single canonical repository for the Skill. Versions belong in
+> Git tags and GitHub Releases, not in separate `-v2` or `-v3` repositories.
+
+## Versioning and development
+
+- `main` is the current stable development line.
+- Use a short-lived feature branch and pull request for a material change.
+- Validate changes with `bash scripts/verify-skill.sh` before merging.
+- Mark published versions with annotated tags such as `v3.0.0`, then create a
+  GitHub Release from that tag.
+- Keep the installed folder name as `software-engineering-workflow`, which is
+  the Skill name used by Codex.
+
+## Current release: v3.0.0
 
 v3 preserves the v2 engineering model while reducing repeated context:
 
@@ -25,14 +39,14 @@ User-scoped:
 
 ```bash
 mkdir -p ~/.agents/skills
-cp -R software-engineering-workflow-v3 ~/.agents/skills/software-engineering-workflow
+cp -R software-engineering-workflow-skill ~/.agents/skills/software-engineering-workflow
 ```
 
 Repo-scoped:
 
 ```bash
 mkdir -p .agents/skills
-cp -R software-engineering-workflow-v3 .agents/skills/software-engineering-workflow
+cp -R software-engineering-workflow-skill .agents/skills/software-engineering-workflow
 ```
 
 Restart/reload Codex after updating the skill if your client requires it.
