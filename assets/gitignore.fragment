@@ -1,0 +1,3 @@
+# Codex/agent disposable state
+.agent/scratch/
+.agent/screenshots/
